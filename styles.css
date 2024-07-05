@@ -4,25 +4,47 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/4b/19/2e/4b192e5920a3f02cff00989c2154a4d6.gif') no-repeat center center fixed;
+    background: url('https://i.pinimg.com/originals/86/88/1b/86881b6f8f2343756541782b61234904.gif') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 #content {
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
     width: 100%;
-    border: 1px solid #ccc;
-    background-image: url('https://example.com/paper-texture.png');
-    background-size: cover;
+    border: 2px solid #ccc;
+    border-top: 10px solid #f0f0f0;
+    border-bottom: 10px solid #f0f0f0;
+    position: relative;
+    margin: 20px 0;
+}
+
+#content::before,
+#content::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background: #f0f0f0;
+    top: -12px;
+    transform: rotate(-5deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#content::before {
+    left: 20px;
+}
+
+#content::after {
+    right: 20px;
+    transform: rotate(5deg);
 }
 
 h1 {
