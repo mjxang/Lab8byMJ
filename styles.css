@@ -1,6 +1,6 @@
-/* styles.css */
+/*general body styling*/
 body {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', cursive; /*handwritten font vibess*/
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -49,20 +49,20 @@ body {
     left: 55%;
     transform: translateX(-50%);
 }
-
+/*styling for main heading*/
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
 }
-
+/*styling for quote*/
 #quote {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-
+/*styling for button*/
 #new-quote {
     padding: 10px 20px;
-    background: #1c1c1c;
+    background: #1c1c1c; /*dark colour to contrast white text on new quote button*/
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -70,11 +70,11 @@ h1 {
     font-family: 'Patrick Hand', cursive;
 }
 
-#new-quote:hover {
-    background: #333;
+#new-quote:hover { /*hover effect for button*/
+    background: #333; /*darker colour for button*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /*responsive styling for smaller screens*/
     body {
         padding: 10px;
     }
