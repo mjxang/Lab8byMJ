@@ -10,43 +10,33 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-#content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    border: 2px solid #ccc;
-    border-top: 10px solid #f0f0f0;
-    border-bottom: 10px solid #f0f0f0;
-    position: relative;
-    margin: 20px 0;
-}
-
-#content::before,
-#content::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 10px;
-    background: #f0f0f0;
-    top: -12px;
-    transform: rotate(-5deg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#content::before {
-    left: 20px;
-}
-
-#content::after {
-    right: 20px;
-    transform: rotate(5deg);
-}
-
+.cloud{ 
+    margin-top:70px;
+    width:350px;
+    height:120px;
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+ }
+ .cloud::after, .cloud::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud::after{
+     width:100px;
+     height:100px;
+     top:-220px;
+     left:50px;
+ }
+ .cloud::before{
+     width:180px;
+     height:180px;
+     top: -70px;
+     left:130px;
+ }
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
